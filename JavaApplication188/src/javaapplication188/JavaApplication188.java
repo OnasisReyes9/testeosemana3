@@ -5,6 +5,8 @@
  */
 package javaapplication188;
 
+import java.util.Random;
+
 /**
  *
  * @author Onasis Reyes
@@ -15,7 +17,27 @@ public class JavaApplication188 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        Random ran = new Random();
+        for (int i = 0; i < 10; i++) {
+            System.out.println("Hola");
+        }
+        
+        String hola = "aght";
+        
+        String temp = "";
+        
+        int fact = 1;
+        for (int i = 1; i <= hola.length(); i++) {
+            fact *= i;
+        }
+        
+        for (int i = 0; i < fact ;i++) {
+            if (!temp.contains(hola.charAt(0 + ran.nextInt(hola.length()-1)) + "")) {
+                
+            }
+        }
+        
     }
     
 }
